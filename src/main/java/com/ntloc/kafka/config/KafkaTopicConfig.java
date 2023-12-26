@@ -11,6 +11,7 @@ public class KafkaTopicConfig {
     @Bean
     public NewTopic ntlocTopic() {
         return TopicBuilder.name("ntloc")
+                .partitions(2)
                 .build();
     }
 }
